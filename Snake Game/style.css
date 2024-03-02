@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,300;0,400;0,700;0,800;0,900;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", sans-serif;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: beige;
+}
+#board{
+    width: 92vmin;
+    height: 92vmin;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
+    background: #63bd32;
+    box-shadow: inset 10px 10px 20px #54a12b,
+                inset -10px -10px 20px #72d93a;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    font-weight: 800;
+    font-size: 2.0rem;
+}
+#scoreBox{
+    position: absolute;
+    top: 40px;
+    right : 20px;
+    font-weight: 800;
+    font-size: 2.0rem;
+}
+.food{
+    background-color: rgb(222, 235, 206);
+    border-radius: 50%;
+    border: .25vmin solid rgb(172, 172, 172);
+}
+.head{
+  background-color: rgb(64, 138, 47);
+  border: 1px solid rgb(34, 80, 23);
+  border-radius: 3px;
+  z-index: 2;
+  transform: scale(1.1);
+  
+}
+.snake{
+  background-color: rgb(64, 138, 47);
+  border: 1px solid rgb(33, 77, 24);
+
+}
